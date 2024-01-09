@@ -11,7 +11,7 @@ const VideoPlayer = () => {
       const canvas = canvasRef.current;
       resizeCanvas(canvas);
       // Load the Tiny Face Detector model from public/model
-      await faceapi.nets.tinyFaceDetector.loadFromUri('./models');
+      await faceapi.nets.tinyFaceDetector.loadFromUri('./model');
     };
 
     initializeCanvas();
